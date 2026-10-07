@@ -1,4 +1,4 @@
-** start of main.py **
+
 
 class Planet:
     def __init__(self, name, planet_type, star):
@@ -43,5 +43,5 @@ print(planet_3)
 
 
 
-** end of main.py **
+
 
