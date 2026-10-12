@@ -30,6 +30,7 @@ class HashTable:
         if hashed_value in self.collection:
             if key in self.collection[hashed_value]:
                 return self.collection[hashed_value][key]
+        return "Member not found"
         
     
 
