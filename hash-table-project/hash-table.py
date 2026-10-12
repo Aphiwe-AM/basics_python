@@ -24,13 +24,21 @@ class HashTable:
         if self.collection[hashed_value] == {}:
             del self.collection[hashed_value]
 
+    def lookup(self, key):
+        hashed_value = self.hash(key)
+
+        if hashed_value in self.collection:
+            if key in self.collection[hashed_value]:
+                return self.collection[hashed_value][key]
         
     
 
 
 table = HashTable()
-table.add("Aphiwe", "software developer")
-table.add("Aphiwe", "ai developer")
+table.add("Aphiwe", "full stack software developer")
+table.add("ewihpA", "developer")
+print(table.lookup("Aphiwe"))
 print(table.collection)
-#table.remove("lubonati")
-#print(table.collection)
+table.remove("lubonati")
+print(table.lookup("ewihpA"))
+print(table.collection)
